@@ -1,1 +1,6 @@
 Hola
+
+Fijo fijo este archivo es para aprender a usarlo bien 
+-Fredo- 
+
+Hey; recuerden crear sus propias Branch para cuando comencemos a programar.
