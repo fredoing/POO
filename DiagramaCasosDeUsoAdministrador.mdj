@@ -9203,16 +9203,6 @@
 					"isAbstract": false,
 					"isFinalSpecialization": false,
 					"isLeaf": false
-				},
-				{
-					"_type": "UMLClassDiagram",
-					"_id": "AAAAAAFjj+UhMYY4Biw=",
-					"_parent": {
-						"$ref": "AAAAAAFjanXcKjXB1zQ="
-					},
-					"name": "ClassDiagram1",
-					"visible": true,
-					"defaultDiagram": false
 				}
 			],
 			"visibility": "public"
