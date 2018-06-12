@@ -1,7 +1,6 @@
-Hola!
-Si quieren practicar como hacer push y pull creo que seria genial con este archivo
-una vez todos estemos seguros, lo podemos eliminar diria yo o tal vez modificarlo
-y dejarlo como una especificación del proyecto en github. Atte: Jorge
+Hola
 
-Fijo fijo este archivo es para aprender a usarlo bien
--Fredo-
+Fijo fijo este archivo es para aprender a usarlo bien 
+-Fredo- 
+
+Hey; recuerden crear sus propias Branch para cuando comencemos a programar.
