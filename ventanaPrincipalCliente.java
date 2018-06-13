@@ -7,6 +7,7 @@ package cliente;
 
 import java.util.ArrayList;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.table.DefaultTableModel;
 
@@ -16,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
  */
 
 public class ventanaPrincipalCliente extends javax.swing.JFrame {
-
+    DefaultTableModel m;
     /**
      * Creates new form ventanaPrincipalCliente
      */
@@ -40,6 +41,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialog2 = new javax.swing.JDialog();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         PanePlatoFuerte = new javax.swing.JScrollPane();
         tablaPlatosFuertes = new javax.swing.JTable();
@@ -56,6 +58,9 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         botonAgregar = new javax.swing.JButton();
         botonEliminar = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -130,12 +135,20 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null}
+                {null, null, null}
             },
             new String [] {
-                "Platillo"
+                "Platillo", "Cantidad", "Calorias"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         jTabbedPane2.addTab("Orden", jScrollPane1);
@@ -158,6 +171,16 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         });
         getContentPane().add(botonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 150, -1));
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("Total de calorias:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 20));
+
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 50, 20));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 260, 20));
+
         fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\yosua\\Desktop\\fondo.jpg")); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -173,7 +196,26 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_botonEliminarActionPerformed
 
     private void botonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarActionPerformed
-        // TODO add your handling code here:
+        
+        int filaEntrada = tablaEntradas.getSelectedRow();
+        int filaPlatoFuerta = tablaPlatosFuertes.getSelectedRow();
+        int filaPostre = tablaPostres.getSelectedRow();
+        int filaBebida = tablaBebidas.getSelectedRow();
+        
+        
+        try{
+            if(filaEntrada == -1 && filaPlatoFuerta == -1 && filaPostre == -1 && filaBebida == -1){
+                JOptionPane.showMessageDialog(null, "Debe seleccionar un platillo","Advertencia", JOptionPane.WARNING_MESSAGE);
+            }else{
+                String cantidadPorciones = JOptionPane.showInputDialog(null,"¿Cuantas porciones quieres?");
+                if(filaEntrada!= -1){
+                    String nombre = (String) tablaEntradas.getValueAt(filaEntrada, 0);
+                    String calorias = (String) tablaEntradas.getValueAt(filaEntrada, 1);
+                }
+            }
+        } catch(Exception e){
+            
+        }
     }//GEN-LAST:event_botonAgregarActionPerformed
 
     private void ComboBox_tipo_envioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBox_tipo_envioActionPerformed
@@ -271,6 +313,10 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     private javax.swing.JButton botonElimiar;
     private javax.swing.JButton botonEliminar;
     private javax.swing.JLabel fondo;
+    private javax.swing.JDialog jDialog2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
