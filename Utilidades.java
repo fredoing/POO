@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
 import javax.xml.parsers.ParserConfigurationException;
 import org.jespxml.JespXML;
 import org.jespxml.excepciones.TagHijoNotFoundException;
@@ -20,11 +21,10 @@ import org.xml.sax.SAXException;
  *
  * @author yosua
  */
-public class Utilidades {
-    public ArrayList <String[]> crearMatriz(String ptipo){
-        JespXML xml = new JespXML(new File("menu.xml"));
+public class Utilidades extends javax.swing.JFrame{
+    public ArrayList <String[]> crearMatrizUnitipo(String ptipo){
+        JespXML xml = new JespXML(new File("menu.xml"));// Parámetro por recibir//
         ArrayList <String[]> matriz = new ArrayList<String[]>();                // definir la matriz con los platillos
-        
         try {
             Tag raiz = xml.leerXML();
             System.out.println(raiz.getNombre());
@@ -32,7 +32,7 @@ public class Utilidades {
             for (Tag platillo : raiz.getTagsHijos()){
                 System.out.println(platillo);
               
-                String  tipo,nombre, calorias, piezasPorPorcion,precio;
+                String  tipo,nombre, calorias, piezasPorPorcion,precio;//enviar como parámetros?
                 try {
                     tipo = platillo.getTagHijoByName("tipo").getContenido();        // obtengo el tipo de platillo listo como un string
             
@@ -63,12 +63,21 @@ public class Utilidades {
         }
     return matriz;
     }
-    
+    public void llenarTabla(ArrayList<String[]> matriz, javax.swing.JTable table, int cantColumnas ){
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+        model.setRowCount(matriz.size());
+        model.setColumnCount(cantColumnas);
+        for(int i=0; i<matriz.size();i++){
+            for(int j=0; j<cantColumnas;j++){
+                table.setValueAt(matriz.get(i)[j], i, j);
+            }
+       }
+    }
      
     
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz = xml.crearMatriz("entradas");
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("entradas");
         
         
         

@@ -27,15 +27,15 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
        
         initComponents();
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz1 = xml.crearMatriz("entrada");
-        llenarTablaEntradas(matriz1);
-        ArrayList<String[]> matriz2 = xml.crearMatriz("platofuerte");
-        llenarTablaPlatoFuerte(matriz2);
-        ArrayList<String[]> matriz3 = xml.crearMatriz("postre");
-        llenarTablaPostres(matriz3);
-        ArrayList<String[]> matriz4 = xml.crearMatriz("bebida");
-        llenarTablaBebida(matriz4);
-        
+        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("entrada");
+        xml.llenarTabla(matriz1, tablaEntradas, 4);
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("platofuerte");
+        xml.llenarTabla(matriz2, tablaPlatosFuertes, 4);
+        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("postre");
+        xml.llenarTabla(matriz3, tablaPostres,4);
+        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("bebida");
+        xml.llenarTabla(matriz4, tablaBebidas, 4);
+         
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -163,7 +163,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Platillo", "Cantidad", "Calorias", "Precio"
+                "Platillo", "Calorias", "Cantidad", "Precio"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -212,10 +212,11 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 260, 50));
 
-        fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\yosua\\Desktop\\fondo.jpg")); // NOI18N
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gui_Admin_J/Fondo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        pack();
+        setSize(new java.awt.Dimension(1041, 720));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tablaEntradasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaEntradasMouseClicked
@@ -320,7 +321,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -354,40 +355,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
             }
        }
     }
-    
-    public void llenarTablaPostres(ArrayList<String[]> matriz ){
-        DefaultTableModel model = (DefaultTableModel) tablaPostres.getModel();
-        model.setRowCount(matriz.size());
-        model.setColumnCount(4);
-        for(int i=0; i<matriz.size();i++){
-            for(int j=0; j<4;j++){
-                tablaPostres.setValueAt(matriz.get(i)[j], i, j);
-            }
-       }
-    }
-    
-    public void llenarTablaPlatoFuerte(ArrayList<String[]> matriz ){
-        DefaultTableModel model = (DefaultTableModel) tablaPlatosFuertes.getModel();
-        model.setRowCount(matriz.size());
-        model.setColumnCount(4);
-        for(int i=0; i<matriz.size();i++){
-            for(int j=0; j<4;j++){
-                tablaPlatosFuertes.setValueAt(matriz.get(i)[j], i, j);
-            }
-       }
-    }
-    
-    public void llenarTablaBebida(ArrayList<String[]> matriz ){
-        DefaultTableModel model = (DefaultTableModel) tablaBebidas.getModel();
-        model.setRowCount(matriz.size());
-        model.setColumnCount(4);
-        for(int i=0; i<matriz.size();i++){
-            for(int j=0; j<4;j++){
-                tablaBebidas.setValueAt(matriz.get(i)[j], i, j);
-            }
-       }
-    }
-    
+       
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane PaneBebidas;
     private javax.swing.JScrollPane PaneEntradas;
