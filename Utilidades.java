@@ -32,24 +32,20 @@ public class Utilidades {
             for (Tag platillo : raiz.getTagsHijos()){
                 System.out.println(platillo);
               
-                String  tipo,nombre, calorias, piezasPorPorcion;
+                String  tipo,nombre, calorias, piezasPorPorcion,precio;
                 try {
                     tipo = platillo.getTagHijoByName("tipo").getContenido();        // obtengo el tipo de platillo listo como un string
             
                     if (ptipo.equals(tipo)){
-                        System.out.println("entro");
-                        String listaInformacion[] = new String[3];              //crea la lista con la informacion del platillo(nombre,calorias,piezas por porcion)
+                        String listaInformacion[] = new String[4];              //crea la lista con la informacion del platillo(nombre,calorias,piezas por porcion)
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
                         calorias = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
                         piezasPorPorcion = platillo.getTagHijoByName("piezasPorPorcion").getContenido();
+                        precio = platillo.getTagHijoByName("precio").getContenido();
                         listaInformacion[0] = nombre;
                         listaInformacion[1] = calorias;
-                        listaInformacion[2] = piezasPorPorcion; 
-                        System.out.println(tipo);
-                        System.out.println(nombre);
-                        System.out.println(calorias);
-                        System.out.println(piezasPorPorcion);
-                        
+                        listaInformacion[2] = piezasPorPorcion;
+                        listaInformacion[3] = precio;
                         matriz.add(listaInformacion);
                     }
                     
@@ -72,11 +68,8 @@ public class Utilidades {
     
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz = xml.crearMatriz("postre");
+        ArrayList<String[]> matriz = xml.crearMatriz("entradas");
         
-        System.out.println(matriz.get(0)[0]); // 0 = nombre
-        System.out.println(matriz.get(0)[1]); // 0 = calorias
-        System.out.println(matriz.get(0)[2]); // 0 = calorias
         
         
     }
