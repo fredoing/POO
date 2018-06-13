@@ -10,6 +10,7 @@
       <caloriasPorPieza> 520 kcal </caloriasPorPieza>
       <precio> 3100 Colones </precio>
       <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
    <platillo>
       <nombre> Ceviche </nombre>
@@ -21,19 +22,20 @@
       <caloriasPorPieza> 205 kcal </caloriasPorPieza>
       <precio> 4000 Colones </precio>
       <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> carne en salsa </nombre>
 	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
+      <codigo> PRN001 </codigo>
       <tamPorcion>400</tamPorcion>
       <piezasPorPorcion> 1 </piezasPorPorcion>
       <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
       <caloriasPorPieza> 610 kcal </caloriasPorPieza>
       <precio> 5000 Colones </precio>
       <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
-
 <platillo>
       <nombre> gelatina </nombre>
       <tipo>postre</tipo>      
@@ -44,6 +46,19 @@
       <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
       <precio> 1500 Colones </precio>
       <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+<disponible>true</disponible>
+   </platillo>
+<platillo>
+      <nombre> Burrito </nombre>
+      <tipo>platofuerte</tipo>      
+	 <codigo> PRN002 </codigo>
+      <tamPorcion>500</tamPorcion>
+      <piezasPorPorcion> 2 </piezasPorPorcion>
+      <caloriasPorPorcion> 800 kcal </caloriasPorPorcion>
+      <caloriasPorPieza> 400 kcal </caloriasPorPieza>
+      <precio> 2150 Colones </precio>
+      <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> coca cola </nombre>
@@ -55,6 +70,7 @@
       <caloriasPorPieza> 520 kcal </caloriasPorPieza>
       <precio> 3100 Colones </precio>
       <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
    <platillo>
       <nombre> Ceviche </nombre>
@@ -66,19 +82,20 @@
       <caloriasPorPieza> 205 kcal </caloriasPorPieza>
       <precio> 4000 Colones </precio>
       <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> carne en salsa </nombre>
 	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
+      <codigo> PRN001 </codigo>
       <tamPorcion>400</tamPorcion>
       <piezasPorPorcion> 1 </piezasPorPorcion>
       <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
       <caloriasPorPieza> 610 kcal </caloriasPorPieza>
       <precio> 5000 Colones </precio>
       <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
-
 <platillo>
       <nombre> gelatina </nombre>
       <tipo>postre</tipo>      
@@ -89,6 +106,19 @@
       <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
       <precio> 1500 Colones </precio>
       <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+<disponible>true</disponible>
+   </platillo>
+<platillo>
+      <nombre> Burrito </nombre>
+      <tipo>platofuerte</tipo>      
+	 <codigo> PRN002 </codigo>
+      <tamPorcion>500</tamPorcion>
+      <piezasPorPorcion> 2 </piezasPorPorcion>
+      <caloriasPorPorcion> 800 kcal </caloriasPorPorcion>
+      <caloriasPorPieza> 400 kcal </caloriasPorPieza>
+      <precio> 2150 Colones </precio>
+      <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> coca cola </nombre>
@@ -100,6 +130,7 @@
       <caloriasPorPieza> 520 kcal </caloriasPorPieza>
       <precio> 3100 Colones </precio>
       <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
    <platillo>
       <nombre> Ceviche </nombre>
@@ -111,19 +142,20 @@
       <caloriasPorPieza> 205 kcal </caloriasPorPieza>
       <precio> 4000 Colones </precio>
       <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> carne en salsa </nombre>
 	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
+      <codigo> PRN001 </codigo>
       <tamPorcion>400</tamPorcion>
       <piezasPorPorcion> 1 </piezasPorPorcion>
       <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
       <caloriasPorPieza> 610 kcal </caloriasPorPieza>
       <precio> 5000 Colones </precio>
       <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
-
 <platillo>
       <nombre> gelatina </nombre>
       <tipo>postre</tipo>      
@@ -134,6 +166,19 @@
       <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
       <precio> 1500 Colones </precio>
       <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+<disponible>true</disponible>
+   </platillo>
+<platillo>
+      <nombre> Burrito </nombre>
+      <tipo>platofuerte</tipo>      
+	 <codigo> PRN002 </codigo>
+      <tamPorcion>500</tamPorcion>
+      <piezasPorPorcion> 2 </piezasPorPorcion>
+      <caloriasPorPorcion> 800 kcal </caloriasPorPorcion>
+      <caloriasPorPieza> 400 kcal </caloriasPorPieza>
+      <precio> 2150 Colones </precio>
+      <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> coca cola </nombre>
@@ -145,6 +190,7 @@
       <caloriasPorPieza> 520 kcal </caloriasPorPieza>
       <precio> 3100 Colones </precio>
       <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
    <platillo>
       <nombre> Ceviche </nombre>
@@ -156,19 +202,20 @@
       <caloriasPorPieza> 205 kcal </caloriasPorPieza>
       <precio> 4000 Colones </precio>
       <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> carne en salsa </nombre>
 	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
+      <codigo> PRN001 </codigo>
       <tamPorcion>400</tamPorcion>
       <piezasPorPorcion> 1 </piezasPorPorcion>
       <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
       <caloriasPorPieza> 610 kcal </caloriasPorPieza>
       <precio> 5000 Colones </precio>
       <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
-
 <platillo>
       <nombre> gelatina </nombre>
       <tipo>postre</tipo>      
@@ -179,6 +226,19 @@
       <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
       <precio> 1500 Colones </precio>
       <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+<disponible>true</disponible>
+   </platillo>
+<platillo>
+      <nombre> Burrito </nombre>
+      <tipo>platofuerte</tipo>      
+	 <codigo> PRN002 </codigo>
+      <tamPorcion>500</tamPorcion>
+      <piezasPorPorcion> 2 </piezasPorPorcion>
+      <caloriasPorPorcion> 800 kcal </caloriasPorPorcion>
+      <caloriasPorPieza> 400 kcal </caloriasPorPieza>
+      <precio> 2150 Colones </precio>
+      <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> coca cola </nombre>
@@ -190,6 +250,7 @@
       <caloriasPorPieza> 520 kcal </caloriasPorPieza>
       <precio> 3100 Colones </precio>
       <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
    <platillo>
       <nombre> Ceviche </nombre>
@@ -201,19 +262,20 @@
       <caloriasPorPieza> 205 kcal </caloriasPorPieza>
       <precio> 4000 Colones </precio>
       <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
       <nombre> carne en salsa </nombre>
 	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
+      <codigo> PRN001 </codigo>
       <tamPorcion>400</tamPorcion>
       <piezasPorPorcion> 1 </piezasPorPorcion>
       <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
       <caloriasPorPieza> 610 kcal </caloriasPorPieza>
       <precio> 5000 Colones </precio>
       <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
-
 <platillo>
       <nombre> gelatina </nombre>
       <tipo>postre</tipo>      
@@ -224,1131 +286,19 @@
       <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
       <precio> 1500 Colones </precio>
       <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 <platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
+      <nombre> Burrito </nombre>
+      <tipo>platofuerte</tipo>      
+	 <codigo> PRN002 </codigo>
+      <tamPorcion>500</tamPorcion>
       <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> coca cola </nombre>
-	 <tipo>bebida</tipo>
-      <codigo> BEB001 </codigo>
-      <tamPorcion>600 ml</tamPorcion>
-      <piezasPorPorcion>1 </piezasPorPorcion>
-      <caloriasPorPorcion> 520 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 520 kcal </caloriasPorPieza>
-      <precio> 3100 Colones </precio>
-      <DetalleDescripcion> Bebida carbonatada que mata lentamente </DetalleDescripcion>
-   </platillo>
-   <platillo>
-      <nombre> Ceviche </nombre>
-      <tipo>entrada</tipo>
-      <codigo> ENT001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 2 </piezasPorPorcion>
-      <caloriasPorPorcion> 410 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 205 kcal </caloriasPorPieza>
-      <precio> 4000 Colones </precio>
-      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-   </platillo>
-<platillo>
-      <nombre> carne en salsa </nombre>
-	 <tipo>platofuerte</tipo>
-      <codigo> PLA001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 610 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 610 kcal </caloriasPorPieza>
-      <precio> 5000 Colones </precio>
-      <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-   </platillo>
-
-<platillo>
-      <nombre> gelatina </nombre>
-      <tipo>postre</tipo>      
-	 <codigo> POS001 </codigo>
-      <tamPorcion>400</tamPorcion>
-      <piezasPorPorcion> 1 </piezasPorPorcion>
-      <caloriasPorPorcion> 1000 kcal </caloriasPorPorcion>
-      <caloriasPorPieza> 1000 kcal </caloriasPorPieza>
-      <precio> 1500 Colones </precio>
-      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina </DetalleDescripcion>
+      <caloriasPorPorcion> 800 kcal </caloriasPorPorcion>
+      <caloriasPorPieza> 400 kcal </caloriasPorPieza>
+      <precio> 2150 Colones </precio>
+      <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano </DetalleDescripcion>
+<disponible>true</disponible>
    </platillo>
 
 
