@@ -27,6 +27,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
        
         initComponents();
         Utilidades xml = new Utilidades();
+        System.out.println("entro");
         ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("entrada");
         xml.llenarTabla(matriz1, tablaEntradas, 4);
         ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("platofuerte");
@@ -212,7 +213,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 260, 50));
 
-        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gui_Admin_J/Fondo.png"))); // NOI18N
+        fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\yosua\\Desktop\\POO\\Fondo.png")); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         setSize(new java.awt.Dimension(1041, 720));
@@ -224,9 +225,19 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_tablaEntradasMouseClicked
 
     private void botonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEliminarActionPerformed
-        
+        int filaPlatillo = tablaOrden.getSelectedRow();        
          
-        
+        if(filaPlatillo == -1){
+            JOptionPane.showMessageDialog(null, "Debe seleccionar un platillo de la tabla orden","Advertencia", JOptionPane.WARNING_MESSAGE);
+        }else{
+            int x = JOptionPane.showConfirmDialog(null,"¿Seguro que quiere elimiar este platillo de la orden?");
+            if(x == 0){
+                DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
+                model.removeRow(filaPlatillo);
+            }else{
+                
+            }
+        }   
         
         
         
@@ -250,16 +261,14 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                 String calorias="";
                 String precio="";
                 if(filaEntrada!= -1){
-                    System.out.println("entradaa");
+                    System.out.println();
                      nombre = (String) tablaEntradas.getValueAt(filaEntrada, 0);
                      calorias = (String) tablaEntradas.getValueAt(filaEntrada, 1);
                      precio = (String) tablaEntradas.getValueAt(filaEntrada, 3);
-                     //int x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
-                     //System.out.println(x);
-                     //String subtotal = x.toString();
+                     Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
                      filaEntrada = -1;
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
-                    String fila[] = {nombre,calorias,cantidadPorciones,precio};
+                    String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaEntradas.clearSelection();
                 }else if(filaPlatoFuerte!= -1){
@@ -267,10 +276,11 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                      nombre = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 0);
                      calorias = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 1);
                      precio = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 3);
-                    // Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
+                     Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
+                 
                      filaPlatoFuerte = -1;
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
-                    String fila[] = {nombre,calorias,cantidadPorciones,precio};
+                   String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaPlatosFuertes.clearSelection();
                 }else if(filaPostre!= -1){
@@ -278,10 +288,11 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                      nombre = (String) tablaPostres.getValueAt(filaPostre, 0);
                      calorias = (String) tablaPostres.getValueAt(filaPostre, 1);
                      precio = (String) tablaPostres.getValueAt(filaPostre, 3);
-                     //Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
+                     Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
                      filaPostre =-1;
+                
                     DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
-                    String fila[] = {nombre,calorias,cantidadPorciones,precio};
+                    String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaPostres.clearSelection();
                 }else if(filaBebida!= -1){
@@ -289,10 +300,11 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                      nombre = (String) tablaBebidas.getValueAt(filaBebida, 0);
                      calorias = (String) tablaBebidas.getValueAt(filaBebida, 1);
                      precio = (String) tablaBebidas.getValueAt(filaBebida, 3);
-                     //Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
+                     Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
                      filaBebida = -1;
+                     
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
-                    String fila[] = {nombre,calorias,cantidadPorciones,precio};
+                    String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaBebidas.clearSelection();
                 }

@@ -23,6 +23,7 @@ import org.xml.sax.SAXException;
  */
 public class Utilidades extends javax.swing.JFrame{
     public ArrayList <String[]> crearMatrizUnitipo(String ptipo){
+        System.out.println("entro");
         JespXML xml = new JespXML(new File("menu.xml"));// Parámetro por recibir//
         ArrayList <String[]> matriz = new ArrayList<String[]>();                // definir la matriz con los platillos
         try {
