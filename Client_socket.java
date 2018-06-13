@@ -7,12 +7,18 @@ package iiiprogra;
 
 import java.io.*;
 import java.net.*;
+<<<<<<< HEAD
+=======
+import java.util.*;
+
+>>>>>>> master
 /**
  *
  * @author josca
  */
 public class Client_socket {
     
+<<<<<<< HEAD
     private Socket cliente = null;
     private DataInputStream input = null;
     private DataOutputStream output = null;
@@ -57,6 +63,23 @@ public class Client_socket {
         try{
             //cliente.descargarArchivo();
             cliente.enviarArchivo();
+=======
+    public void descargarArchivo() throws Exception{
+        Socket cliente = new Socket("127.0.0.1", 8080);
+        InputStream input = cliente.getInputStream();
+        FileOutputStream output = new FileOutputStream("menu-cliente.xml");
+        int fileSize = 2048;
+        byte b[] = new byte[fileSize];
+        input.read(b, 0 ,b.length);
+        byte ar[]=new String(b).replaceAll("\0", "").getBytes();
+        output.write(ar, 0 ,ar.length);
+    }
+    
+    public static void main(String[] args){       
+        Client_socket cliente = new Client_socket();
+        try{
+            cliente.descargarArchivo();
+>>>>>>> master
         }
         catch(Exception e){
             System.out.println("No se pudo descargar el archivo");
