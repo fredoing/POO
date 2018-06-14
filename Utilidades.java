@@ -27,57 +27,91 @@ import javax.xml.parsers.*;
  * @author yosua
  */
 public class Utilidades extends javax.swing.JFrame{
-    public ArrayList <String[]> crearMatrizUnitipo(String ptipo){
-        System.out.println("entro");
-        JespXML xml = new JespXML(new File("menu.xml"));// Parámetro por recibir//
-        ArrayList <String[]> matriz = new ArrayList<String[]>();                // definir la matriz con los platillos
-        try {
-            Tag raiz = xml.leerXML();
+    
+    public ArrayList <String[]> crearMatrizUnitipo (String tag, String contenido){//tag viene siendo "Tipo", "nombre","Precio"
+        ArrayList <String[]> matriz= new ArrayList <>();                   //Contenido viene siendo "bebida" "Coca Cola" "1500"
+        try{
+            JespXML ArchivoXML= new JespXML(new File("menu.xml"));
+            Tag raiz = ArchivoXML.leerXML();
             System.out.println(raiz.getNombre());
-            
-            for (Tag platillo : raiz.getTagsHijos()){
+            for(Tag platillo: raiz.getTagsHijos()){//Ciclo para acceder a todos los tag "platillos"
                 System.out.println(platillo);
-              
-                String  tipo,nombre, calorias, piezasPorPorcion,precio;//enviar como parámetros?
-                try {
-                    tipo = platillo.getTagHijoByName("tipo").getContenido();        // obtengo el tipo de platillo listo como un string
-            
-                    if (ptipo.equals(tipo)){
-                        String listaInformacion[] = new String[4];              //crea la lista con la informacion del platillo(nombre,calorias,piezas por porcion)
+                String nombre, tipo, codigo, tamPorcion, piezasPorPorcion,caloriasPorcion, caloriasPorPieza, precio, disponible;//Bebida/Coca cola/       
+                try{
+                    tipo = platillo.getTagHijoByName(tag).getContenido();                  
+                    String infoList[];
+                    if(contenido.equals(tipo) && tag.equals("nombre")){
+                        infoList= new String[8];
+                        nombre = platillo.getTagHijoByName("nombre").getContenido();                
+                        codigo=platillo.getTagHijoByName("codigo").getContenido();
+                        tamPorcion=platillo.getTagHijoByName("tamPorcion").getContenido();
+                        piezasPorPorcion = platillo.getTagHijoByName("piezasPorPorcion").getContenido();
+                        caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
+                        caloriasPorPieza= platillo.getTagHijoByName("caloriasPorPieza").getContenido();
+                        precio = platillo.getTagHijoByName("precio").getContenido(); 
+                        disponible=platillo.getTagHijoByName("disponible").getContenido();
+                        infoList[0]=(nombre);
+                        infoList[1]=(codigo);
+                        infoList[2]=(tamPorcion);
+                        infoList[3]=(piezasPorPorcion);
+                        infoList[4]=(caloriasPorcion);
+                        infoList[5]=(caloriasPorPieza);
+                        infoList[6]=(precio);  
+                        infoList[7]=(disponible);
+                        matriz.add(infoList);
+                    }
+                    else if(contenido.equals(tipo)&& tag.equals("tipo")){
+                        infoList= new String[4];
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
-                        calorias = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
+                        caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
                         piezasPorPorcion = platillo.getTagHijoByName("piezasPorPorcion").getContenido();
                         precio = platillo.getTagHijoByName("precio").getContenido();
-                        listaInformacion[0] = nombre;
-                        listaInformacion[1] = calorias;
-                        listaInformacion[2] = piezasPorPorcion;
-                        listaInformacion[3] = precio;
-                        matriz.add(listaInformacion);
+                        infoList[0]=(nombre);
+                        infoList[1]=(caloriasPorcion);
+                        infoList[2]=(piezasPorPorcion);
+                        infoList[3]=(precio);
+                        matriz.add(infoList);
                     }
-                    
-                    
-                    
-                    
-                } catch (TagHijoNotFoundException ex) {
+                }catch (TagHijoNotFoundException ex) {
                     Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                
             }
-            
         } catch (ParserConfigurationException | SAXException | IOException ex) {
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
-    return matriz;
+        return matriz;        
     }
-    public void llenarTabla(ArrayList<String[]> matriz, javax.swing.JTable table, int cantColumnas ){
+    
+    public void llenarTabla(ArrayList <String[]> matriz, javax.swing.JTable table, int cantColumnas ){
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(matriz.size());
         model.setColumnCount(cantColumnas);
         for(int i=0; i<matriz.size();i++){
             for(int j=0; j<cantColumnas;j++){
-                table.setValueAt(matriz.get(i)[j], i, j);
+                table.setValueAt(matriz.get(i)[j], i, j);//.get(j)get(i)[j]
             }
        }
+    }                        //"DetalleDescripcion", "coca cola"
+    public String extraerDato(String tag, String dish){
+        try{
+            JespXML ArchivoXML= new JespXML(new File("menu.xml"));
+            Tag raiz = ArchivoXML.leerXML();
+            for(Tag platillo: raiz.getTagsHijos()){//Ciclo para acceder a todos los tag "platillos"      
+                String nombrePlato,contenido;
+                try{
+                    nombrePlato= platillo.getTagHijoByName("nombre").getContenido();//Coca cola//1500/Bebidas
+                    if(nombrePlato.equals(dish)){
+                    contenido = platillo.getTagHijoByName(tag).getContenido();
+                    return contenido;
+                    }
+                }catch (TagHijoNotFoundException ex) {
+                    Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+                }                                       
+            }
+        }catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "Contenido no disponible";
     }
      
     public void agregaPedido(String nombre, String cel, String dir, ArrayList<String> platillos, ArrayList<String> cantidad, String tipo){
@@ -135,10 +169,7 @@ public class Utilidades extends javax.swing.JFrame{
     
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("entradas");
-        
-        
-        
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas");   
     }
 }
 

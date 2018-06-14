@@ -28,13 +28,13 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         initComponents();
         Utilidades xml = new Utilidades();
         System.out.println("entro");
-        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("entrada");
+        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada");
         xml.llenarTabla(matriz1, tablaEntradas, 4);
-        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("platofuerte");
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte");
         xml.llenarTabla(matriz2, tablaPlatosFuertes, 4);
-        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("postre");
+        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre");
         xml.llenarTabla(matriz3, tablaPostres,4);
-        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("bebida");
+        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida");
         xml.llenarTabla(matriz4, tablaBebidas, 4);
          
     }
@@ -376,17 +376,6 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
             new ventanaPrincipalCliente().setVisible(true);
             
         });
-    }
-
-    public void llenarTablaEntradas(ArrayList<String[]> matriz ){
-        DefaultTableModel model = (DefaultTableModel) tablaEntradas.getModel();
-        model.setRowCount(matriz.size());
-        model.setColumnCount(4);
-        for(int i=0; i<matriz.size();i++){
-            for(int j=0; j<4;j++){
-                tablaEntradas.setValueAt(matriz.get(i)[j], i, j);
-            }
-       }
     }
        
     // Variables declaration - do not modify//GEN-BEGIN:variables
