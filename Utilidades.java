@@ -5,8 +5,10 @@
  */
 package cliente;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -115,7 +117,7 @@ public class Utilidades extends javax.swing.JFrame{
         return "Contenido no disponible";
     }
      
-    public void agregaPedido(String nombre, String cel, String dir, ArrayList<String> platillos, ArrayList<String> cantidad, String tipo){
+    public void agregaPedido(String nombre, String cel, String dir, ArrayList<String> platillos, ArrayList<String> cantidad, ArrayList<String> precio, String tipo, String fecha){
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = factory.newDocumentBuilder();
@@ -125,6 +127,10 @@ public class Utilidades extends javax.swing.JFrame{
             Element ped = doc.createElement("ped");
             root.appendChild(ped);
             
+            Element date = doc.createElement("fecha");
+            date.setTextContent(fecha);
+            Element ordennum = doc.createElement("ordenGlobal");
+            ordennum.setTextContent(Integer.toString(calcularGlobal()));
             Element tip = doc.createElement("tipo");
             tip.setTextContent(tipo);
             Element nom = doc.createElement("nombre");
@@ -134,20 +140,29 @@ public class Utilidades extends javax.swing.JFrame{
             Element dire = doc.createElement("dir");
             dire.setTextContent(dir);
             
+            ped.appendChild(date);
+            ped.appendChild(ordennum);
             ped.appendChild(tip);
             ped.appendChild(nom);
             ped.appendChild(tel);
             ped.appendChild(dire);
             
             for(int i=0; i<cantidad.size(); i++){
-                Element plat = doc.createElement("paltillo");
-                plat.setTextContent(platillos.get(i));
+                Element plat = doc.createElement("platillo");
                 ped.appendChild(plat);
+                
+                Element nomplat = doc.createElement("nombrePlatillo");
+                nomplat.setTextContent(platillos.get(i));
+                plat.appendChild(nomplat);
                 
                 Element cant = doc.createElement("cantidad");
                 cant.setTextContent(cantidad.get(i));
                 plat.appendChild(cant);
             }           
+            
+            Element total = doc.createElement("total");
+            total.setTextContent(calcularPrecio(precio,tipo));
+            ped.appendChild(total);
             
             DOMSource source = new DOMSource(doc);
 
@@ -157,15 +172,64 @@ public class Utilidades extends javax.swing.JFrame{
             StreamResult result = new StreamResult("pedidos.xml");
             tf.transform(source, result);
             
-        } catch (ParserConfigurationException | SAXException | IOException ex) {
-            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerConfigurationException ex) {
-            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
+        } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
+    }
+    
+    public String calcularPrecio(ArrayList<String> precio , String tipo){
+        String result = "";
+        int total = 0;
+        for(int i=0; i<precio.size(); i++){
+            int costo = Integer.parseInt(precio.get(i));
+            total += costo;
+        }
+        int costoAdicional = Integer.parseInt(consultarPrecio(tipo));
+        total += costoAdicional;
+        result = Integer.toString(total);
+        return result;
+    }
+    
+    public String consultarPrecio(String tipo){
+        String result = "";
+        try {
+            JespXML ArchivoXML= new JespXML(new File("pedidos.xml"));
+            Tag raiz = ArchivoXML.leerXML();
+            if(tipo=="Llevar"){
+                result = raiz.getTagHijoByName("precioPorRecoger").getContenido();
+            }
+            else if(tipo=="Express"){
+                result = raiz.getTagHijoByName("precioPorExpress").getContenido();
+            }
+            else{
+                result = "0";
+            }
+        } catch (ParserConfigurationException | SAXException | IOException | TagHijoNotFoundException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return result;
+    }
+    
+    public int calcularGlobal(){
+        NodeList nodes = null;
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
+            // Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents.
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            
+            // The Document interface represents the entire HTML or XML document. Conceptually, it is the root of the document tree, and provides the primary access to the document's data.
+            Document doc = factory.newDocumentBuilder().parse("pedidos.xml");
+            
+            // Returns a NodeList of all the Elements in document order with a given tag name and are contained in the document.
+            nodes = doc.getElementsByTagName("ped");
+            
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return nodes.getLength();
     }
     
     public static void main(String[] args) throws Exception{

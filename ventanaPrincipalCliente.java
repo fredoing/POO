@@ -28,13 +28,13 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         initComponents();
         Utilidades xml = new Utilidades();
         System.out.println("entro");
-        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada",false);
+        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada");
         xml.llenarTabla(matriz1, tablaEntradas, 4);
-        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte",false);
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte");
         xml.llenarTabla(matriz2, tablaPlatosFuertes, 4);
-        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre",false);
+        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre");
         xml.llenarTabla(matriz3, tablaPostres,4);
-        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida",false);
+        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida");
         xml.llenarTabla(matriz4, tablaBebidas, 4);
          
     }
@@ -331,12 +331,18 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         else{
             ArrayList<String> platillos = new ArrayList<String>();
             ArrayList<String> cantidad = new ArrayList<String>();
+            ArrayList<String> precio = new ArrayList<String>();
             for(int i=0; i<tablaOrden.getRowCount(); i++){
                 platillos.add(tablaOrden.getValueAt(i, 0).toString());
                 cantidad.add(tablaOrden.getValueAt(i, 2).toString());
+                precio.add(tablaOrden.getValueAt(i, 3).toString());
             }
+            Pedido pedido = new Pedido();
+            pedido.setPedido(platillos);
+            pedido.setCantidad(cantidad);
+            pedido.setPrecio(precio);
             ProcesaPedido ventanaPedido = new ProcesaPedido();
-            ventanaPedido.setListas(platillos, cantidad);
+            ventanaPedido.setPedido(pedido);
             ventanaPedido.setVisible(true);
         }
     }//GEN-LAST:event_botonEnviarActionPerformed

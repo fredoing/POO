@@ -1,65 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <pedidos>
-   <precioPorExpress>1100</precioPorExpress> 
-   <precioPorRecoger>500</precioPorRecoger>
-   <ped>
-      <tipo>Express</tipo>
-      <fecha> 6/14/2018 </fecha>
-      <ordenGlobal>1</ordenGlobal>
-      <nombre>null</nombre>
-      <tel>54878552</tel>
-      <dir>Su chante</dir>
-      <platillo>
-         <nombre>gelatina</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-      <platillo>
-         <nombre>coca cola</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-      <platillo>
-         <nombre>Ceviche</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-   </ped>
-   <ped>
-      <tipo>En sitio</tipo>
-      <fecha> 6/14/2018 </fecha>
-      <ordenGlobal>2</ordenGlobal>
-      <nombre>null</nombre>
-      <tel>null</tel>
-      <dir>null</dir>
-      <platillo>
-         <nombre>Burrito</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-      <platillo>
-         <nombre>carne en salsa</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-      <platillo>
-         <nombre>gelatina</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-   </ped>
-   <ped>
-      <tipo>Llevar</tipo>
-      <fecha> 6/14/2018 </fecha>
-      <ordenGlobal>3</ordenGlobal>
-      <nombre>Jorge</nombre>
-      <tel>83985660</tel>
-      <dir>null</dir>
-      <platillo>
-         <nombre>Burrito</nombre>
-         <cantidad>1</cantidad>
-      </platillo>  
-      <platillo>
-         <nombre>carne en salsa</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-      <platillo>
-         <nombre>gelatina</nombre>
-         <cantidad>1</cantidad>
-      </platillo>
-   </ped>
+<precioPorRecoger>500</precioPorRecoger>
+<precioPorExpress>1500</precioPorExpress>
+
+<ped>
+    <fecha>2018/06/14 17:20:21</fecha>
+    <ordenGlobal>0</ordenGlobal>
+    <tipo>En Sitio</tipo>
+    <nombre>Fredo</nombre>
+    <tel> </tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <total>3000</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 17:20:48</fecha>
+    <ordenGlobal>1</ordenGlobal>
+    <tipo>Llevar</tipo>
+    <nombre>Fredo</nombre>
+    <tel>1234</tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <total>3500</total>
+  </ped>
 </pedidos>

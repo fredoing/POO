@@ -6,6 +6,7 @@
 package cliente;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,9 +14,7 @@ import java.util.ArrayList;
  */
 public class ProcesaPedido extends javax.swing.JFrame {
     
-    private ArrayList<String> platillos;
-    private ArrayList<String> cantidad;
-    private String tipo;
+    private Pedido ped;
     /**
      * Creates new form ProcesaPedido
      */
@@ -183,14 +182,22 @@ public class ProcesaPedido extends javax.swing.JFrame {
         Utilidades util = new Utilidades();
         String mostrar = jComboBox1.getSelectedItem().toString();
         if(mostrar=="En sitio"){
-            util.agregaPedido(jTextField1.getText(), " ", " ", platillos, cantidad, mostrar);
+            ped.setNombre(jTextField1.getText());
+            ped.setCelular(" ");
+            ped.setDir(" ");
         }
         else if(mostrar=="Llevar"){
-            util.agregaPedido(jTextField1.getText(), jTextField2.getText(), " ", platillos, cantidad, mostrar);
+            ped.setNombre(jTextField1.getText());
+            ped.setCelular(jTextField2.getText());
+            ped.setDir(" ");
         }
         else if(mostrar=="Express"){
-            util.agregaPedido(jTextField1.getText(), jTextField2.getText(), jTextArea1.getText(), platillos, cantidad, mostrar);
+            ped.setNombre(jTextField1.getText());
+            ped.setCelular(jTextField2.getText());
+            ped.setDir(jTextArea1.getText());
         }
+        ped.setTipopedido(mostrar);
+        ped.procesarPedido();
         setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -204,14 +211,10 @@ public class ProcesaPedido extends javax.swing.JFrame {
         setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
     
-    public void setListas(ArrayList<String> plat, ArrayList<String> cant){
-        platillos = plat;
-        cantidad = cant;
-    }
-    
-    public void setTipo(String tip){
-        tipo  = tip;
+    public void setPedido(Pedido pedido){
+        ped  = pedido;
     }
     /**
      * @param args the command line arguments
