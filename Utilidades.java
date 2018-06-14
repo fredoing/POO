@@ -17,6 +17,11 @@ import org.jespxml.excepciones.TagHijoNotFoundException;
 import org.jespxml.modelo.Tag;
 import org.xml.sax.SAXException;
 
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+import javax.xml.transform.dom.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
 /**
  *
  * @author yosua
@@ -75,6 +80,58 @@ public class Utilidades extends javax.swing.JFrame{
        }
     }
      
+    public void agregaPedido(String nombre, String cel, String dir, ArrayList<String> platillos, ArrayList<String> cantidad, String tipo){
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder docBuilder = factory.newDocumentBuilder();
+            Document doc = docBuilder.parse("pedidos.xml");
+            
+            Element root = doc.getDocumentElement();
+            Element ped = doc.createElement("ped");
+            root.appendChild(ped);
+            
+            Element tip = doc.createElement("tipo");
+            tip.setTextContent(tipo);
+            Element nom = doc.createElement("nombre");
+            nom.setTextContent(nombre);
+            Element tel = doc.createElement("tel");
+            tel.setTextContent(cel);
+            Element dire = doc.createElement("dir");
+            dire.setTextContent(dir);
+            
+            ped.appendChild(tip);
+            ped.appendChild(nom);
+            ped.appendChild(tel);
+            ped.appendChild(dire);
+            
+            for(int i=0; i<cantidad.size(); i++){
+                Element plat = doc.createElement("paltillo");
+                plat.setTextContent(platillos.get(i));
+                ped.appendChild(plat);
+                
+                Element cant = doc.createElement("cantidad");
+                cant.setTextContent(cantidad.get(i));
+                plat.appendChild(cant);
+            }           
+            
+            DOMSource source = new DOMSource(doc);
+
+            Transformer tf = TransformerFactory.newInstance().newTransformer();
+            tf.setOutputProperty(OutputKeys.INDENT, "yes");
+            tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+            StreamResult result = new StreamResult("pedidos.xml");
+            tf.transform(source, result);
+            
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerConfigurationException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
     
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();

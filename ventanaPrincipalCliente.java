@@ -52,7 +52,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         tablaEntradas = new javax.swing.JTable();
         PanePlatoFuerte = new javax.swing.JScrollPane();
         tablaPlatosFuertes = new javax.swing.JTable();
-        botonElimiar = new javax.swing.JButton();
+        botonEnviar = new javax.swing.JButton();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaOrden = new javax.swing.JTable();
@@ -155,9 +155,14 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 420, 410));
 
-        botonElimiar.setText("Enviar");
-        botonElimiar.setMaximumSize(new java.awt.Dimension(126, 46));
-        getContentPane().add(botonElimiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
+        botonEnviar.setText("Enviar");
+        botonEnviar.setMaximumSize(new java.awt.Dimension(126, 46));
+        botonEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonEnviarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonEnviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
 
         tablaOrden.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -212,8 +217,6 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 260, 50));
-
-        fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\yosua\\Desktop\\POO\\Fondo.png")); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         setSize(new java.awt.Dimension(1041, 720));
@@ -320,6 +323,24 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_botonAgregarActionPerformed
 
+    private void botonEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEnviarActionPerformed
+        // TODO add your handling code here:
+        if(tablaOrden.getRowCount()==0){
+            JOptionPane.showMessageDialog(null, "Debe seleccionar uno o mas platillos","Advertencia", JOptionPane.WARNING_MESSAGE);
+        }
+        else{
+            ArrayList<String> platillos = new ArrayList<String>();
+            ArrayList<String> cantidad = new ArrayList<String>();
+            for(int i=0; i<tablaOrden.getRowCount(); i++){
+                platillos.add(tablaOrden.getValueAt(i, 0).toString());
+                cantidad.add(tablaOrden.getValueAt(i, 2).toString());
+            }
+            ProcesaPedido ventanaPedido = new ProcesaPedido();
+            ventanaPedido.setListas(platillos, cantidad);
+            ventanaPedido.setVisible(true);
+        }
+    }//GEN-LAST:event_botonEnviarActionPerformed
+
     
     
     /**
@@ -374,8 +395,8 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane PanePlatoFuerte;
     private javax.swing.JScrollPane PanePostres;
     private javax.swing.JButton botonAgregar;
-    private javax.swing.JButton botonElimiar;
     private javax.swing.JButton botonEliminar;
+    private javax.swing.JButton botonEnviar;
     private javax.swing.JLabel fondo;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
