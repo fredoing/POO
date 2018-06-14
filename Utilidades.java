@@ -27,9 +27,10 @@ import javax.xml.parsers.*;
  * @author yosua
  */
 public class Utilidades extends javax.swing.JFrame{
-    
-    public ArrayList <String[]> crearMatrizUnitipo (String tag, String contenido){//tag viene siendo "Tipo", "nombre","Precio"
+    //xml.crearMatrizUnitipo("tipo", "platofuerte")
+    public ArrayList <String[]> crearMatrizUnitipo (String tag, String contenido, boolean flag ){//tag viene siendo "Tipo", "nombre","Precio"
         ArrayList <String[]> matriz= new ArrayList <>();                   //Contenido viene siendo "bebida" "Coca Cola" "1500"
+        
         try{
             JespXML ArchivoXML= new JespXML(new File("menu.xml"));
             Tag raiz = ArchivoXML.leerXML();
@@ -38,10 +39,10 @@ public class Utilidades extends javax.swing.JFrame{
                 System.out.println(platillo);
                 String nombre, tipo, codigo, tamPorcion, piezasPorPorcion,caloriasPorcion, caloriasPorPieza, precio, disponible;//Bebida/Coca cola/       
                 try{
-                    tipo = platillo.getTagHijoByName(tag).getContenido();                  
+                    tipo = platillo.getTagHijoByName("tipo").getContenido();                  
                     String infoList[];
-                    if(contenido.equals(tipo) && tag.equals("nombre")){
-                        infoList= new String[8];
+                    if(contenido.equals(tipo) && tag.equals("tipo")&&flag==true){// buscar if que solucione este dilema, ambas tiene 
+                        infoList= new String[8];                    //el mismo código, identficar diferencia entre Yosua y mia
                         nombre = platillo.getTagHijoByName("nombre").getContenido();                
                         codigo=platillo.getTagHijoByName("codigo").getContenido();
                         tamPorcion=platillo.getTagHijoByName("tamPorcion").getContenido();
@@ -169,7 +170,7 @@ public class Utilidades extends javax.swing.JFrame{
     
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas");   
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
     }
 }
 
