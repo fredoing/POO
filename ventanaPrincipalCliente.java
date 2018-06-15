@@ -224,7 +224,8 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     private void tablaEntradasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaEntradasMouseClicked
    
     }//GEN-LAST:event_tablaEntradasMouseClicked
-
+//Funcion: Se encarga de leer la fila que se encuentra seleccionada en la tabla de orden para proceder
+//a eliminarla y restar las calorias y el precio del producto eliminado.
     private void botonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEliminarActionPerformed
         int filaPlatillo = tablaOrden.getSelectedRow();        
          
@@ -251,7 +252,9 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_botonEliminarActionPerformed
-
+    
+    //Funcion: Este boton se encarga de leer si en la tabla de platillos hay una fila seleccionada entre las diferentes cladificaciones
+    // de platillos, solicita la cantidad de porciones del platillo y al final agrega a la tabla de orden sumando las calorias y el precio.
     private void botonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarActionPerformed
         
         int filaEntrada = tablaEntradas.getSelectedRow();
@@ -337,7 +340,7 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_botonAgregarActionPerformed
-
+//Funcion: 
     private void botonEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEnviarActionPerformed
         // TODO add your handling code here:
         if(tablaOrden.getRowCount()==0){
