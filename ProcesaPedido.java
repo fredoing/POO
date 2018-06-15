@@ -198,6 +198,8 @@ public class ProcesaPedido extends javax.swing.JFrame {
         }
         ped.setTipopedido(mostrar);
         ped.procesarPedido();
+        String precio = util.calcularPrecio(ped.getPrecio(), mostrar);
+        JOptionPane.showMessageDialog(null, "Su recibo es de: "+precio+" colones");
         setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

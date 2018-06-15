@@ -28,13 +28,13 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         initComponents();
         Utilidades xml = new Utilidades();
         System.out.println("entro");
-        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada");
+        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada",false);
         xml.llenarTabla(matriz1, tablaEntradas, 4);
-        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte");
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte",false);
         xml.llenarTabla(matriz2, tablaPlatosFuertes, 4);
-        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre");
+        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre",false);
         xml.llenarTabla(matriz3, tablaPostres,4);
-        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida");
+        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida",false);
         xml.llenarTabla(matriz4, tablaBebidas, 4);
          
     }
@@ -344,6 +344,10 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
             ProcesaPedido ventanaPedido = new ProcesaPedido();
             ventanaPedido.setPedido(pedido);
             ventanaPedido.setVisible(true);
+            DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
+            while(model.getRowCount()>0){
+                model.removeRow(0);
+            }
         }
     }//GEN-LAST:event_botonEnviarActionPerformed
 
