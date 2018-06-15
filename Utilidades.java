@@ -63,7 +63,7 @@ public class Utilidades extends javax.swing.JFrame{
                         infoList[7]=(disponible);
                         matriz.add(infoList);
                     }
-                    else if(contenido.equals(tipo)&& tag.equals("tipo") && flag==false){
+                    else if(contenido.equals(tipo)&& tag.equals("tipo")){
                         infoList= new String[4];
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
                         caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
@@ -232,11 +232,61 @@ public class Utilidades extends javax.swing.JFrame{
         return nodes.getLength();
     }
     
+    public void vecesP(ArrayList<String> platillos, ArrayList<String> cantidad){
+        for(int i=0; i<platillos.size(); i++){
+            vecesPAux(platillos.get(i), cantidad.get(i));
+        }
+    }
+    
+    public void vecesPAux(String platillo, String cantidad){
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder docBuilder = factory.newDocumentBuilder();
+            try {
+                Document doc = docBuilder.parse("menu.xml");
+                Node menu = doc.getFirstChild();
+                
+                NodeList listPlat = menu.getChildNodes();
+                
+                for(int i=0; i<listPlat.getLength(); i++){
+                    Node nodoPlatillo = listPlat.item(i);
+                    NodeList listaElementos = nodoPlatillo.getChildNodes();
+                    for(int e=0; e<listaElementos.getLength(); e++){
+                        Node nodoEle = listaElementos.item(e);
+                        if("nombre".equals(nodoEle.getNodeName())){
+                            if(!nodoEle.getTextContent().equals(platillo)){
+                                break;
+                            }
+                        }
+                        else if("vecesp".equals(nodoEle.getNodeName())){
+                            int cantAnterior = Integer.parseInt(extraerDato("vecesp", platillo));
+                            int cantAsumar = Integer.parseInt(cantidad);
+                            int nuevo = cantAsumar+cantAnterior;
+                            nodoEle.setTextContent(Integer.toString(nuevo));
+                        }
+                    }
+                }
+                
+                DOMSource source = new DOMSource(doc);
+
+                Transformer tf = TransformerFactory.newInstance().newTransformer();
+                tf.setOutputProperty(OutputKeys.INDENT, "yes");
+                tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+                StreamResult result = new StreamResult("menu.xml");
+                tf.transform(source, result);
+                
+            } catch (SAXException | IOException | TransformerException ex) {
+                Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (ParserConfigurationException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
-        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);
-        Utilidades xml2 = new Utilidades();
-        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","entradas",true);
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
     }
 }
 
