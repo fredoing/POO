@@ -29,7 +29,14 @@ import javax.xml.parsers.*;
  * @author yosua
  */
 public class Utilidades extends javax.swing.JFrame{
-    //xml.crearMatrizUnitipo("tipo", "platofuerte")
+    
+    
+    /**Método encargado de generar una matriz, ya sea con toda la información del platillo si la variable flg es true o con solo 4 elemenentos predefinido si es false
+     * @param tag:String del xml ej:tipo
+     * @param contenido:String que es la información que se encuentra dentro de la etiqueta seleccionada.
+     * @param flag:boolean para escoger cuales valores son los que se van a obtener.
+     * @return retorna una matriz con los elementos seleccionados
+     */
     public ArrayList <String[]> crearMatrizUnitipo (String tag, String contenido, boolean flag ){//tag viene siendo "Tipo", "nombre","Precio"
         ArrayList <String[]> matriz= new ArrayList <>();                   //Contenido viene siendo "bebida" "Coca Cola" "1500"
         
@@ -85,6 +92,11 @@ public class Utilidades extends javax.swing.JFrame{
         return matriz;        
     }
     
+    /**Método encargado de llenar tablas a partir de una matriz
+     * @param matriz necesaria para cargar los datos en la tabla
+     * @param table que es parte de la biblioteca Swing; esta es la tabla específica en donde queremos cargar los datos.
+     * @param cantColumnas: esto nos dice cuantas columnas vamos a llenar, por cuestiones del tamaño del ArrayList
+     */
     public void llenarTabla(ArrayList <String[]> matriz, javax.swing.JTable table, int cantColumnas ){
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(matriz.size());
@@ -98,7 +110,13 @@ public class Utilidades extends javax.swing.JFrame{
                 }                
             }
        }
-    }                        //"DetalleDescripcion", "coca cola"
+    }
+    
+    /**Método encargado de extraer un dato específico de un platillo determinado
+     * @param tag La etiqueta de cada uno de los hijos platillo en el xml
+     * @param dish El nombre del platillo del cual queremos buscar un dato.
+     * @return Un String del dato específico que se pidió del tag.
+     */
     public String extraerDato(String tag, String dish){
         try{
             JespXML ArchivoXML= new JespXML(new File("menu.xml"));
@@ -121,6 +139,17 @@ public class Utilidades extends javax.swing.JFrame{
         return "Contenido no disponible";
     }
      
+    /**FREDO
+     *
+     * @param nombre
+     * @param cel
+     * @param dir
+     * @param platillos
+     * @param cantidad
+     * @param precio
+     * @param tipo
+     * @param fecha
+     */
     public void agregaPedido(String nombre, String cel, String dir, ArrayList<String> platillos, ArrayList<String> cantidad, ArrayList<String> precio, String tipo, String fecha){
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -183,6 +212,12 @@ public class Utilidades extends javax.swing.JFrame{
         
     }
     
+    /**
+     *
+     * @param precio
+     * @param tipo
+     * @return
+     */
     public String calcularPrecio(ArrayList<String> precio , String tipo){
         String result = "";
         int total = 0;
@@ -196,6 +231,11 @@ public class Utilidades extends javax.swing.JFrame{
         return result;
     }
     
+    /**
+     *
+     * @param tipo
+     * @return
+     */
     public String consultarPrecio(String tipo){
         String result = "";
         try {
@@ -216,6 +256,10 @@ public class Utilidades extends javax.swing.JFrame{
         return result;
     }
     
+    /**
+     *
+     * @return
+     */
     public int calcularGlobal(){
         NodeList nodes = null;
         try {
@@ -236,6 +280,11 @@ public class Utilidades extends javax.swing.JFrame{
         return nodes.getLength();
     }
     
+    /**
+     *
+     * @param platillos
+     * @param cantidad
+     */
     public void vecesP(ArrayList<String> platillos, ArrayList<String> cantidad){
         for(int i=0; i<platillos.size(); i++){
             vecesPAux(platillos.get(i), cantidad.get(i));
@@ -288,6 +337,11 @@ public class Utilidades extends javax.swing.JFrame{
         
     }
     
+    /** Encargado de inicializar la clase.
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
         ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);
