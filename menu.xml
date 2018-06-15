@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <menu>
-  <platillo>
-     <nombre>coca cola</nombre>
+ <platillo>
+    <nombre>coca cola</nombre>
 	<tipo>bebida</tipo>
-	<vecesp>2</vecesp>
+	<vecesp>0</vecesp>
      <codigo>BEB001</codigo>
      <tamPorcion>600 ml</tamPorcion>
      <piezasPorPorcion>1</piezasPorPorcion>
@@ -15,7 +15,7 @@
   </platillo>
   <platillo>
      <nombre>Ceviche</nombre>
-	 <vecesp>2</vecesp>
+	 <vecesp>0</vecesp>
      <tipo>entrada</tipo>
      <codigo>ENT001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -25,33 +25,33 @@
      <precio>4000</precio>
      <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 <platillo>
      <nombre>carne en salsa</nombre>
-	 <vecesp>2</vecesp>
+	 <vecesp>0</vecesp>
 	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+   <codigo>PRN001</codigo>
+    <tamPorcion>400</tamPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>610</caloriasPorPorcion>
+    <caloriasPorPieza>610</caloriasPorPieza>
+    <precio>5000</precio>
+    <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 <platillo>
      <nombre>gelatina</nombre>
-	 <vecesp>18</vecesp>
+	 <vecesp>0</vecesp>
      <tipo>postre</tipo>     
 	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
+    <tamPorcion>400</tamPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>1000</caloriasPorPorcion>
+    <caloriasPorPieza>1000</caloriasPorPieza>
+    <precio>1500</precio>
+    <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 
 
 </menu>
