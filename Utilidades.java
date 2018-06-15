@@ -63,7 +63,7 @@ public class Utilidades extends javax.swing.JFrame{
                         infoList[7]=(disponible);
                         matriz.add(infoList);
                     }
-                    else if(contenido.equals(tipo)&& tag.equals("tipo")){
+                    else if(contenido.equals(tipo)&& tag.equals("tipo") && flag==false){
                         infoList= new String[4];
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
                         caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
@@ -173,6 +173,7 @@ public class Utilidades extends javax.swing.JFrame{
             tf.transform(source, result);
             
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
+<<<<<<< master
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -279,14 +280,75 @@ public class Utilidades extends javax.swing.JFrame{
                 Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
             }
         } catch (ParserConfigurationException ex) {
+=======
+>>>>>>> Aquí va todo mi trabajo
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
     
+    public String calcularPrecio(ArrayList<String> precio , String tipo){
+        String result = "";
+        int total = 0;
+        for(int i=0; i<precio.size(); i++){
+            int costo = Integer.parseInt(precio.get(i));
+            total += costo;
+        }
+        int costoAdicional = Integer.parseInt(consultarPrecio(tipo));
+        total += costoAdicional;
+        result = Integer.toString(total);
+        return result;
+    }
+    
+    public String consultarPrecio(String tipo){
+        String result = "";
+        try {
+            JespXML ArchivoXML= new JespXML(new File("pedidos.xml"));
+            Tag raiz = ArchivoXML.leerXML();
+            if(tipo=="Llevar"){
+                result = raiz.getTagHijoByName("precioPorRecoger").getContenido();
+            }
+            else if(tipo=="Express"){
+                result = raiz.getTagHijoByName("precioPorExpress").getContenido();
+            }
+            else{
+                result = "0";
+            }
+        } catch (ParserConfigurationException | SAXException | IOException | TagHijoNotFoundException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return result;
+    }
+    
+    public int calcularGlobal(){
+        NodeList nodes = null;
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
+            // Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents.
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            
+            // The Document interface represents the entire HTML or XML document. Conceptually, it is the root of the document tree, and provides the primary access to the document's data.
+            Document doc = factory.newDocumentBuilder().parse("pedidos.xml");
+            
+            // Returns a NodeList of all the Elements in document order with a given tag name and are contained in the document.
+            nodes = doc.getElementsByTagName("ped");
+            
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return nodes.getLength();
+    }
+    
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
+<<<<<<< master
         ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
+=======
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);
+        Utilidades xml2 = new Utilidades();
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","entradas",true);
+>>>>>>> Aquí va todo mi trabajo
     }
 }
 

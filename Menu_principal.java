@@ -5,14 +5,17 @@
  */
 package Gui_Admin_J;
 
+import cliente.Utilidades;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.BorderFactory;
-import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
-import static javax.swing.JOptionPane.YES_NO_OPTION;
-import javax.swing.border.BevelBorder;
+import javax.swing.JPopupMenu;
 import javax.swing.border.Border;
-import javax.swing.border.CompoundBorder;
 
 /**
  *
@@ -23,8 +26,11 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
     /**
      * Creates new form Menu_principal
      */
+    Utilidades xml= new Utilidades();
     public Menu_principal() {
         initComponents();
+        ArrayList<String[]> matrizPlatoFuerte = xml.crearMatrizUnitipo("tipo", "platofuerte",true);      
+        xml.llenarTabla(matrizPlatoFuerte, jTableGeneral,jTableGeneral.getColumnCount());
     }
 
     /**
@@ -62,6 +68,8 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         Editar_Lbutton = new javax.swing.JLabel();
         Agregar_background = new javax.swing.JPanel();
         Agregar_Lbutton = new javax.swing.JLabel();
+        Actualizar_background = new javax.swing.JPanel();
+        Actualizar_Lbutton = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
 
         setTitle("Menú principal");
@@ -87,7 +95,7 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
                 java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, true
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -362,7 +370,7 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         });
         Eliminar_background.add(Eliminar_Lbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 20));
 
-        getContentPane().add(Eliminar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, 60, 20));
+        getContentPane().add(Eliminar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 60, 20));
 
         Editar_background.setBackground(new java.awt.Color(255, 221, 153));
         Editar_background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -389,7 +397,7 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         });
         Editar_background.add(Editar_Lbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 20));
 
-        getContentPane().add(Editar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 350, 60, 20));
+        getContentPane().add(Editar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, 60, 20));
 
         Agregar_background.setBackground(new java.awt.Color(255, 221, 153));
         Agregar_background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -416,7 +424,34 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         });
         Agregar_background.add(Agregar_Lbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 20));
 
-        getContentPane().add(Agregar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 350, 60, 20));
+        getContentPane().add(Agregar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 350, 60, 20));
+
+        Actualizar_background.setBackground(new java.awt.Color(255, 221, 153));
+        Actualizar_background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Actualizar_Lbutton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        Actualizar_Lbutton.setText(" Actualizar");
+        Actualizar_Lbutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Actualizar_Lbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Actualizar_LbuttonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Actualizar_LbuttonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Actualizar_LbuttonMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Actualizar_LbuttonMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                Actualizar_LbuttonMouseReleased(evt);
+            }
+        });
+        Actualizar_background.add(Actualizar_Lbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 20));
+
+        getContentPane().add(Actualizar_background, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 350, 60, 20));
 
         Background.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gui_Admin_J/Fondo.png"))); // NOI18N
@@ -427,26 +462,38 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         setSize(new java.awt.Dimension(800, 425));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    @Override
-  public void setColorInicial(javax.swing.JPanel panel){
-      panel.setBackground(new Color(255,196,77,200));
-  }
-    @Override
-  public void setColorSalida(javax.swing.JPanel panel){
-      panel.setBackground(new Color(255,221,153,200));
-  }
-    @Override
-  public void presionar(javax.swing.JPanel panel, javax.swing.JLabel etiqueta){
-        panel.setBackground(new Color(255,221,153,200));
-        Border loweredbevel= BorderFactory.createLoweredBevelBorder();
-        etiqueta.setBorder(loweredbevel);
-  }
-    @Override
-  public void soltar(javax.swing.JPanel panel, javax.swing.JLabel etiqueta){
+//    public void popUpTable(){
+//        JPopupMenu popUpMenuInfo= new JPopupMenu();
+//        JMenuItem menuItemInfo=new JMenuItem("Info del platillo",new ImageIcon(getClass().getResource("Gui_Admin_J/knife.png")));
+//        menuItemInfo.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                //jTableGeneral              
+//                Info_platillo ventanaInfo=new Info_platillo();
+//                ventanaInfo.setVisible(true);
+//                
+//            }
+//        });
+//    } 
+    public void setColorInicial(javax.swing.JPanel panel){
         panel.setBackground(new Color(255,196,77,200));
-        Border raisedbevel= BorderFactory.createRaisedBevelBorder();
-        etiqueta.setBorder(raisedbevel);
-  }
+    }
+    @Override
+    public void setColorSalida(javax.swing.JPanel panel){
+        panel.setBackground(new Color(255,221,153,200));
+    }
+      @Override
+    public void presionar(javax.swing.JPanel panel, javax.swing.JLabel etiqueta){
+          panel.setBackground(new Color(255,221,153,200));
+          Border loweredbevel= BorderFactory.createLoweredBevelBorder();
+          etiqueta.setBorder(loweredbevel);
+    }
+      @Override
+    public void soltar(javax.swing.JPanel panel, javax.swing.JLabel etiqueta){
+          panel.setBackground(new Color(255,196,77,200));
+          Border raisedbevel= BorderFactory.createRaisedBevelBorder();
+          etiqueta.setBorder(raisedbevel);
+    }
     private void Eliminar_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Eliminar_LbuttonMouseClicked
    
         int elección=JOptionPane.showConfirmDialog(null, "Está a punto de eliminar este platillo,\nrecuerde que al ser eliminado\ndesaparecerá, todo registro del mismo.", "¿Eliminar?", JOptionPane.YES_NO_OPTION);
@@ -498,7 +545,8 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
     Clicked
     */
     private void Entradas_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Entradas_LbuttonMouseClicked
-        JOptionPane.showConfirmDialog(null, "ahora no funciono.");
+        ArrayList<String[]> matrizEntrada =xml.crearMatrizUnitipo("tipo", "entrada",true);
+        xml.llenarTabla(matrizEntrada, jTableGeneral,(jTableGeneral.getColumnCount()));
     }//GEN-LAST:event_Entradas_LbuttonMouseClicked
 
     private void Entradas_LbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Entradas_LbuttonMouseEntered
@@ -552,13 +600,15 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
     Clicked
     */
     private void Bebidas_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bebidas_LbuttonMouseClicked
-        // TODO add your handling code here:
+        ArrayList<String[]> matrizBebida =xml.crearMatrizUnitipo("tipo", "bebida",true);
+        xml.llenarTabla(matrizBebida, jTableGeneral, jTableGeneral.getColumnCount());
     }//GEN-LAST:event_Bebidas_LbuttonMouseClicked
 /* 
     Clicked
     */
     private void Principal_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Principal_LbuttonMouseClicked
-        // TODO add your handling code here:
+        ArrayList<String[]> matrizPlatoFuerte = xml.crearMatrizUnitipo("tipo", "platofuerte",true);
+        xml.llenarTabla(matrizPlatoFuerte, jTableGeneral,jTableGeneral.getColumnCount());
     }//GEN-LAST:event_Principal_LbuttonMouseClicked
 
     private void Bebidas_LbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bebidas_LbuttonMouseEntered
@@ -580,7 +630,8 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
     Clicked
     */
     private void Postres_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Postres_LbuttonMouseClicked
-        // TODO add your handling code here:
+        ArrayList<String[]> matrizPostre =xml.crearMatrizUnitipo("tipo", "postre",true);
+        xml.llenarTabla(matrizPostre, jTableGeneral, jTableGeneral.getColumnCount());
     }//GEN-LAST:event_Postres_LbuttonMouseClicked
 
     private void Postres_LbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Postres_LbuttonMouseEntered
@@ -700,6 +751,28 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         Historial_de_pedidos ventantaHistorial=new Historial_de_pedidos();
         ventantaHistorial.setVisible(true);
     }//GEN-LAST:event_Historial_LbuttonMouseClicked
+/*
+    Clicked
+    */
+    private void Actualizar_LbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Actualizar_LbuttonMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Actualizar_LbuttonMouseClicked
+
+    private void Actualizar_LbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Actualizar_LbuttonMouseEntered
+        setColorInicial(Actualizar_background);
+    }//GEN-LAST:event_Actualizar_LbuttonMouseEntered
+
+    private void Actualizar_LbuttonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Actualizar_LbuttonMouseExited
+        setColorSalida(Actualizar_background);
+    }//GEN-LAST:event_Actualizar_LbuttonMouseExited
+
+    private void Actualizar_LbuttonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Actualizar_LbuttonMousePressed
+        presionar(Actualizar_background,Actualizar_Lbutton);
+    }//GEN-LAST:event_Actualizar_LbuttonMousePressed
+
+    private void Actualizar_LbuttonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Actualizar_LbuttonMouseReleased
+        soltar(Actualizar_background,Actualizar_Lbutton);
+    }//GEN-LAST:event_Actualizar_LbuttonMouseReleased
     /**
      * @param args the command line arguments
      */
@@ -728,14 +801,14 @@ public class Menu_principal extends javax.swing.JFrame implements Buttons {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Menu_principal().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Menu_principal().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Actualizar_Lbutton;
+    private javax.swing.JPanel Actualizar_background;
     private javax.swing.JLabel Agregar_Lbutton;
     private javax.swing.JPanel Agregar_background;
     private javax.swing.JLabel Background;

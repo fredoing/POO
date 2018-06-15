@@ -43,7 +43,6 @@ public class Platillos_del_cliente extends javax.swing.JFrame implements Buttons
         jScrollPaneTextArea = new javax.swing.JScrollPane();
         Ubicación_jTextArea = new javax.swing.JTextArea();
         Background = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Platillos del cliente");
@@ -103,9 +102,6 @@ public class Platillos_del_cliente extends javax.swing.JFrame implements Buttons
         Background.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gui_Admin_J/Fondo.png"))); // NOI18N
         getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 350));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gui_Admin_J/f7c669.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 220, 40));
 
         setSize(new java.awt.Dimension(465, 388));
         setLocationRelativeTo(null);
@@ -176,7 +172,6 @@ public class Platillos_del_cliente extends javax.swing.JFrame implements Buttons
     private javax.swing.JLabel Teléfono_Label;
     private javax.swing.JLabel Ubicación_Label;
     private javax.swing.JTextArea Ubicación_jTextArea;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPaneOrdenes;
     private javax.swing.JScrollPane jScrollPaneTextArea;
     private javax.swing.JTextArea jTextArea1;
