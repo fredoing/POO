@@ -13,7 +13,7 @@ import java.net.*;
  * @author josca
  */
 public class Server_socket {
-<<<<<<< HEAD
+
     
     private ServerSocket server = null;
     private Socket cliente = null;
@@ -51,7 +51,7 @@ public class Server_socket {
     public static void main(String[] args) throws Exception{
         Server_socket server = new Server_socket(8080);
         server.recibirArchivo();
-=======
+
     public static void main(String[] args) throws Exception{
         ServerSocket server = new ServerSocket(8080);
         Socket cliente = server.accept();
@@ -60,6 +60,6 @@ public class Server_socket {
         file.read(b, 0, b.length);
         OutputStream output = cliente.getOutputStream();
         output.write(b, 0, b.length);
->>>>>>> master
+
     }
 }
