@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< master
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <pedidos>
 <precioPorRecoger>500</precioPorRecoger>
@@ -30,3 +32,42 @@
     <total>3500</total>
   </ped>
 </pedidos>
+=======
+=======
+>>>>>>> Adm-Jorge
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<pedidos>
+<precioPorRecoger>500</precioPorRecoger>
+<precioPorExpress>1500</precioPorExpress>
+
+<ped>
+    <fecha>2018/06/14 17:20:21</fecha>
+    <ordenGlobal>0</ordenGlobal>
+    <tipo>En Sitio</tipo>
+    <nombre>Fredo</nombre>
+    <tel> </tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <total>3000</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 17:20:48</fecha>
+    <ordenGlobal>1</ordenGlobal>
+    <tipo>Llevar</tipo>
+    <nombre>Fredo</nombre>
+    <tel>1234</tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <total>3500</total>
+  </ped>
+</pedidos>
+<<<<<<< HEAD
+>>>>>>> los Extras de máster
+=======
+>>>>>>> Adm-Jorge
