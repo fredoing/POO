@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <menu>
   <platillo>
      <nombre>coca cola</nombre>
 	<tipo>bebida</tipo>
-	<vecesp>0</vecesp>
+	<vecesp>2</vecesp>
      <codigo>BEB001</codigo>
      <tamPorcion>600 ml</tamPorcion>
      <piezasPorPorcion>1</piezasPorPorcion>
@@ -15,7 +15,7 @@
   </platillo>
   <platillo>
      <nombre>Ceviche</nombre>
-	 <vecesp>0</vecesp>
+	 <vecesp>2</vecesp>
      <tipo>entrada</tipo>
      <codigo>ENT001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -28,7 +28,7 @@
   </platillo>
 <platillo>
      <nombre>carne en salsa</nombre>
-	 <vecesp>0</vecesp>
+	 <vecesp>2</vecesp>
 	<tipo>platofuerte</tipo>
      <codigo>PRN001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -41,7 +41,7 @@
   </platillo>
 <platillo>
      <nombre>gelatina</nombre>
-	 <vecesp>0</vecesp>
+	 <vecesp>18</vecesp>
      <tipo>postre</tipo>     
 	<codigo>POS001</codigo>
      <tamPorcion>400</tamPorcion>

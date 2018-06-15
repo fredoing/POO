@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< master
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <pedidos>
 <precioPorRecoger>500</precioPorRecoger>
@@ -31,18 +29,9 @@
     </platillo>
     <total>3500</total>
   </ped>
-</pedidos>
-=======
-=======
->>>>>>> Adm-Jorge
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<pedidos>
-<precioPorRecoger>500</precioPorRecoger>
-<precioPorExpress>1500</precioPorExpress>
-
 <ped>
-    <fecha>2018/06/14 17:20:21</fecha>
-    <ordenGlobal>0</ordenGlobal>
+    <fecha>2018/06/14 18:56:53</fecha>
+    <ordenGlobal>2</ordenGlobal>
     <tipo>En Sitio</tipo>
     <nombre>Fredo</nombre>
     <tel> </tel>
@@ -54,20 +43,93 @@
     <total>3000</total>
   </ped>
 <ped>
-    <fecha>2018/06/14 17:20:48</fecha>
-    <ordenGlobal>1</ordenGlobal>
-    <tipo>Llevar</tipo>
+    <fecha>2018/06/14 19:02:33</fecha>
+    <ordenGlobal>3</ordenGlobal>
+    <tipo>En Sitio</tipo>
     <nombre>Fredo</nombre>
-    <tel>1234</tel>
+    <tel> </tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>1</cantidad>
+    </platillo>
+    <platillo>
+      <nombrePlatillo>coca cola</nombrePlatillo>
+      <cantidad>1</cantidad>
+    </platillo>
+    <total>4600</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 20:58:02</fecha>
+    <ordenGlobal>4</ordenGlobal>
+    <tipo>En Sitio</tipo>
+    <nombre>Fredo</nombre>
+    <tel> </tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>1</cantidad>
+    </platillo>
+    <total>1500</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 21:13:33</fecha>
+    <ordenGlobal>5</ordenGlobal>
+    <tipo>Express</tipo>
+    <nombre>Fredo</nombre>
+    <tel>88888888</tel>
+    <dir>en mi casa</dir>
+    <platillo>
+      <nombrePlatillo>carne en salsa</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <platillo>
+      <nombrePlatillo>coca cola</nombrePlatillo>
+      <cantidad>1</cantidad>
+    </platillo>
+    <total>14600</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 21:16:33</fecha>
+    <ordenGlobal>6</ordenGlobal>
+    <tipo>En Sitio</tipo>
+    <nombre>Wicho</nombre>
+    <tel> </tel>
     <dir> </dir>
     <platillo>
       <nombrePlatillo>gelatina</nombrePlatillo>
       <cantidad>2</cantidad>
     </platillo>
-    <total>3500</total>
+    <platillo>
+      <nombrePlatillo>Ceviche</nombrePlatillo>
+      <cantidad>2</cantidad>
+    </platillo>
+    <total>11000</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 21:20:08</fecha>
+    <ordenGlobal>7</ordenGlobal>
+    <tipo>Llevar</tipo>
+    <nombre>Isco</nombre>
+    <tel>1234</tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>6</cantidad>
+    </platillo>
+    <total>9500</total>
+  </ped>
+<ped>
+    <fecha>2018/06/14 21:25:13</fecha>
+    <ordenGlobal>8</ordenGlobal>
+    <tipo>En Sitio</tipo>
+    <nombre>Ronaldo</nombre>
+    <tel> </tel>
+    <dir> </dir>
+    <platillo>
+      <nombrePlatillo>gelatina</nombrePlatillo>
+      <cantidad>3</cantidad>
+    </platillo>
+    <total>4500</total>
   </ped>
 </pedidos>
-<<<<<<< HEAD
->>>>>>> los Extras de máster
-=======
->>>>>>> Adm-Jorge
