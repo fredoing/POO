@@ -63,7 +63,7 @@ public class Utilidades extends javax.swing.JFrame{
                         infoList[7]=(disponible);
                         matriz.add(infoList);
                     }
-                    else if(contenido.equals(tipo)&& tag.equals("tipo") && flag==false){
+                    else if(contenido.equals(tipo)&& tag.equals("tipo")){
                         infoList= new String[4];
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
                         caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
@@ -280,13 +280,17 @@ public class Utilidades extends javax.swing.JFrame{
                 Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
             }
         } catch (ParserConfigurationException ex) {
+<<<<<<< master
 =======
 >>>>>>> Aquí va todo mi trabajo
+=======
+>>>>>>> los Extras de máster
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
     
+<<<<<<< master
     public String calcularPrecio(ArrayList<String> precio , String tipo){
         String result = "";
         int total = 0;
@@ -349,6 +353,11 @@ public class Utilidades extends javax.swing.JFrame{
         Utilidades xml2 = new Utilidades();
         ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","entradas",true);
 >>>>>>> Aquí va todo mi trabajo
+=======
+    public static void main(String[] args) throws Exception{
+        Utilidades xml = new Utilidades();
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
+>>>>>>> los Extras de máster
     }
 }
 

@@ -270,6 +270,7 @@ public class Pedido extends Cliente {
         }
         setFecha();
         util.agregaPedido(nombre, celular, direccion, pedido, cantidad, precio, tipo, this.fecha);
+        util.vecesP(pedido, cantidad);
     }
     
 }
