@@ -38,12 +38,12 @@ public class Utilidades extends javax.swing.JFrame{
             Tag raiz = ArchivoXML.leerXML();
             System.out.println(raiz.getNombre());
             for(Tag platillo: raiz.getTagsHijos()){//Ciclo para acceder a todos los tag "platillos"
-                System.out.println(platillo);
+               // System.out.println(platillo);
                 String nombre, tipo, codigo, tamPorcion, piezasPorPorcion,caloriasPorcion, caloriasPorPieza, precio, disponible;//Bebida/Coca cola/       
                 try{
                     tipo = platillo.getTagHijoByName("tipo").getContenido();                  
                     String infoList[];
-                    if(contenido.equals(tipo) && tag.equals("tipo")&&flag==true){// buscar if que solucione este dilema, ambas tiene 
+                    if(contenido.equals(tipo) && tag.equals("tipo")&& flag==true){// buscar if que solucione este dilema, ambas tiene 
                         infoList= new String[8];                    //el mismo código, identficar diferencia entre Yosua y mia
                         nombre = platillo.getTagHijoByName("nombre").getContenido();                
                         codigo=platillo.getTagHijoByName("codigo").getContenido();
@@ -63,7 +63,7 @@ public class Utilidades extends javax.swing.JFrame{
                         infoList[7]=(disponible);
                         matriz.add(infoList);
                     }
-                    else if(contenido.equals(tipo)&& tag.equals("tipo")){
+                    else if(contenido.equals(tipo)&& tag.equals("tipo") && flag==false){
                         infoList= new String[4];
                         nombre = platillo.getTagHijoByName("nombre").getContenido();
                         caloriasPorcion = platillo.getTagHijoByName("caloriasPorPorcion").getContenido();
@@ -91,7 +91,11 @@ public class Utilidades extends javax.swing.JFrame{
         model.setColumnCount(cantColumnas);
         for(int i=0; i<matriz.size();i++){
             for(int j=0; j<cantColumnas;j++){
-                table.setValueAt(matriz.get(i)[j], i, j);//.get(j)get(i)[j]
+                if("true".equals(matriz.get(i)[j])){
+                    table.setValueAt(true, i, j);
+                }else{
+                    table.setValueAt(matriz.get(i)[j], i, j);//.get(j)get(i)[j]
+                }                
             }
        }
     }                        //"DetalleDescripcion", "coca cola"
@@ -233,6 +237,7 @@ public class Utilidades extends javax.swing.JFrame{
         return nodes.getLength();
     }
     
+<<<<<<< master
     public void vecesP(ArrayList<String> platillos, ArrayList<String> cantidad){
         for(int i=0; i<platillos.size(); i++){
             vecesPAux(platillos.get(i), cantidad.get(i));
@@ -358,6 +363,13 @@ public class Utilidades extends javax.swing.JFrame{
         Utilidades xml = new Utilidades();
         ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
 >>>>>>> los Extras de máster
+=======
+    public static void main(String[] args) throws Exception{
+        Utilidades xml = new Utilidades();
+        ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);
+        Utilidades xml2 = new Utilidades();
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","entradas",true);
+>>>>>>> corregida pulga en utilidades#2
     }
 }
 
