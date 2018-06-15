@@ -3,6 +3,7 @@
   <platillo>
      <nombre>coca cola</nombre>
 	<tipo>bebida</tipo>
+	<vecesp>0</vecesp>
      <codigo>BEB001</codigo>
      <tamPorcion>600 ml</tamPorcion>
      <piezasPorPorcion>1</piezasPorPorcion>
@@ -14,6 +15,7 @@
   </platillo>
   <platillo>
      <nombre>Ceviche</nombre>
+	 <vecesp>0</vecesp>
      <tipo>entrada</tipo>
      <codigo>ENT001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -26,6 +28,7 @@
   </platillo>
 <platillo>
      <nombre>carne en salsa</nombre>
+	 <vecesp>0</vecesp>
 	<tipo>platofuerte</tipo>
      <codigo>PRN001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -38,6 +41,7 @@
   </platillo>
 <platillo>
      <nombre>gelatina</nombre>
+	 <vecesp>0</vecesp>
      <tipo>postre</tipo>     
 	<codigo>POS001</codigo>
      <tamPorcion>400</tamPorcion>
@@ -46,258 +50,6 @@
      <caloriasPorPieza>1000 </caloriasPorPieza>
      <precio>1500</precio>
      <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>Burrito</nombre>
-     <tipo>platofuerte</tipo>     
-	<codigo>PRN002</codigo>
-     <tamPorcion>500</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>800 </caloriasPorPorcion>
-     <caloriasPorPieza>400 </caloriasPorPieza>
-     <precio>2150</precio>
-     <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>coca cola</nombre>
-	<tipo>bebida</tipo>
-     <codigo>BEB001</codigo>
-     <tamPorcion>600 ml</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>520 </caloriasPorPorcion>
-     <caloriasPorPieza>520 </caloriasPorPieza>
-     <precio>3100</precio>
-     <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-  <platillo>
-     <nombre>Ceviche</nombre>
-     <tipo>entrada</tipo>
-     <codigo>ENT001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>410 </caloriasPorPorcion>
-     <caloriasPorPieza>205 </caloriasPorPieza>
-     <precio>4000</precio>
-     <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>carne en salsa</nombre>
-	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>gelatina</nombre>
-     <tipo>postre</tipo>     
-	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>Burrito</nombre>
-     <tipo>platofuerte</tipo>     
-	<codigo>PRN002</codigo>
-     <tamPorcion>500</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>800 </caloriasPorPorcion>
-     <caloriasPorPieza>400 </caloriasPorPieza>
-     <precio>2150</precio>
-     <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>coca cola</nombre>
-	<tipo>bebida</tipo>
-     <codigo>BEB001</codigo>
-     <tamPorcion>600 ml</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>520 </caloriasPorPorcion>
-     <caloriasPorPieza>520 </caloriasPorPieza>
-     <precio>3100</precio>
-     <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-  <platillo>
-     <nombre>Ceviche</nombre>
-     <tipo>entrada</tipo>
-     <codigo>ENT001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>410 </caloriasPorPorcion>
-     <caloriasPorPieza>205 </caloriasPorPieza>
-     <precio>4000</precio>
-     <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>carne en salsa</nombre>
-	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>gelatina</nombre>
-     <tipo>postre</tipo>     
-	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>Burrito</nombre>
-     <tipo>platofuerte</tipo>     
-	<codigo>PRN002</codigo>
-     <tamPorcion>500</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>800 </caloriasPorPorcion>
-     <caloriasPorPieza>400 </caloriasPorPieza>
-     <precio>2150</precio>
-     <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>coca cola</nombre>
-	<tipo>bebida</tipo>
-     <codigo>BEB001</codigo>
-     <tamPorcion>600 ml</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>520 </caloriasPorPorcion>
-     <caloriasPorPieza>520 </caloriasPorPieza>
-     <precio>3100</precio>
-     <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-  <platillo>
-     <nombre>Ceviche</nombre>
-     <tipo>entrada</tipo>
-     <codigo>ENT001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>410 </caloriasPorPorcion>
-     <caloriasPorPieza>205 </caloriasPorPieza>
-     <precio>4000</precio>
-     <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>carne en salsa</nombre>
-	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>gelatina</nombre>
-     <tipo>postre</tipo>     
-	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>Burrito</nombre>
-     <tipo>platofuerte</tipo>     
-	<codigo>PRN002</codigo>
-     <tamPorcion>500</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>800 </caloriasPorPorcion>
-     <caloriasPorPieza>400 </caloriasPorPieza>
-     <precio>2150</precio>
-     <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>coca cola</nombre>
-	<tipo>bebida</tipo>
-     <codigo>BEB001</codigo>
-     <tamPorcion>600 ml</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>520 </caloriasPorPorcion>
-     <caloriasPorPieza>520 </caloriasPorPieza>
-     <precio>3100</precio>
-     <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-  <platillo>
-     <nombre>Ceviche</nombre>
-     <tipo>entrada</tipo>
-     <codigo>ENT001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>410 </caloriasPorPorcion>
-     <caloriasPorPieza>205 </caloriasPorPieza>
-     <precio>4000</precio>
-     <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>carne en salsa</nombre>
-	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>gelatina</nombre>
-     <tipo>postre</tipo>     
-	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
-<disponible>true</disponible>
-  </platillo>
-<platillo>
-     <nombre>Burrito</nombre>
-     <tipo>platofuerte</tipo>     
-	<codigo>PRN002</codigo>
-     <tamPorcion>500</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>800 </caloriasPorPorcion>
-     <caloriasPorPieza>400 </caloriasPorPieza>
-     <precio>2150</precio>
-     <DetalleDescripcion>Burriton con frijoles molidos, aguacate, huevo revuelto, jamon, queso, lechuga, tomate y salsa lisano</DetalleDescripcion>
 <disponible>true</disponible>
   </platillo>
 
