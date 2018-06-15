@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu>
-  <platillo>
-     <nombre>coca cola</nombre>
+ <platillo>
+    <nombre>coca cola</nombre>
 	<tipo>bebida</tipo>
 	<vecesp>0</vecesp>
-     <codigo>BEB001</codigo>
-     <tamPorcion>600 ml</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>520 </caloriasPorPorcion>
-     <caloriasPorPieza>520 </caloriasPorPieza>
-     <precio>3100</precio>
-     <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
+    <codigo>BEB001</codigo>
+    <tamPorcion>600 ml</tamPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>520</caloriasPorPorcion>
+    <caloriasPorPieza>520</caloriasPorPieza>
+    <precio>3100</precio>
+    <DetalleDescripcion>Bebida carbonatada que mata lentamente</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
-  <platillo>
-     <nombre>Ceviche</nombre>
-	 <vecesp>0</vecesp>
-     <tipo>entrada</tipo>
-     <codigo>ENT001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>2</piezasPorPorcion>
-     <caloriasPorPorcion>410 </caloriasPorPorcion>
-     <caloriasPorPieza>205 </caloriasPorPieza>
-     <precio>4000</precio>
-     <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
+ </platillo>
+ <platillo>
+    <nombre>Ceviche</nombre>
+	<vecesp>0</vecesp>
+    <tipo>entrada</tipo>
+    <codigo>ENT001</codigo>
+    <tamPorcion>400</tamPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>410</caloriasPorPorcion>
+    <caloriasPorPieza>205</caloriasPorPieza>
+    <precio>4000</precio>
+    <DetalleDescripcion>Cevichito de la casa, preparado con mariscos frescos y nuestra salsa especial</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 <platillo>
-     <nombre>carne en salsa</nombre>
-	 <vecesp>0</vecesp>
+    <nombre>carne en salsa</nombre>
+	<vecesp>0</vecesp>
 	<tipo>platofuerte</tipo>
-     <codigo>PRN001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>610 </caloriasPorPorcion>
-     <caloriasPorPieza>610 </caloriasPorPieza>
-     <precio>5000</precio>
-     <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
+   <codigo>PRN001</codigo>
+    <tamPorcion>400</tamPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>610</caloriasPorPorcion>
+    <caloriasPorPieza>610</caloriasPorPieza>
+    <precio>5000</precio>
+    <DetalleDescripcion>carne en salsacarne en salsacarne en salsacarne en salsa</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 <platillo>
-     <nombre>gelatina</nombre>
-	 <vecesp>0</vecesp>
-     <tipo>postre</tipo>     
+    <nombre>gelatina</nombre>
+	<vecesp>0</vecesp>
+    <tipo>postre</tipo>     
 	<codigo>POS001</codigo>
-     <tamPorcion>400</tamPorcion>
-     <piezasPorPorcion>1</piezasPorPorcion>
-     <caloriasPorPorcion>1000 </caloriasPorPorcion>
-     <caloriasPorPieza>1000 </caloriasPorPieza>
-     <precio>1500</precio>
-     <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
+    <tamPorcion>400</tamPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>1000</caloriasPorPorcion>
+    <caloriasPorPieza>1000</caloriasPorPieza>
+    <precio>1500</precio>
+    <DetalleDescripcion>gelatina gelatina gelatina gelatina gelatina gelatina</DetalleDescripcion>
 <disponible>true</disponible>
-  </platillo>
+ </platillo>
 
 
 </menu>

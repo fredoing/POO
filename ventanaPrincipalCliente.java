@@ -21,20 +21,20 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     /**
      * Creates new form ventanaPrincipalCliente
      */
-    
-   
+    Integer montototal=0;
+    Integer caloriatotal=0;
     public ventanaPrincipalCliente() {
        
         initComponents();
         Utilidades xml = new Utilidades();
         System.out.println("entro");
-        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada");
+        ArrayList<String[]> matriz1 = xml.crearMatrizUnitipo("tipo","entrada",false);
         xml.llenarTabla(matriz1, tablaEntradas, 4);
-        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte");
+        ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","platofuerte",false);
         xml.llenarTabla(matriz2, tablaPlatosFuertes, 4);
-        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre");
+        ArrayList<String[]> matriz3 = xml.crearMatrizUnitipo("tipo","postre",false);
         xml.llenarTabla(matriz3, tablaPostres,4);
-        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida");
+        ArrayList<String[]> matriz4 = xml.crearMatrizUnitipo("tipo","bebida",false);
         xml.llenarTabla(matriz4, tablaBebidas, 4);
          
     }
@@ -60,9 +60,9 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         botonEliminar = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lablecalorias = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        labeltotal = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -206,17 +206,15 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
 
         jLabel1.setText("Total de calorias:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 20));
-
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 50, 20));
+        jPanel1.add(lablecalorias, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 50, 20));
 
         jLabel3.setText("Precio total:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 80, -1));
-
-        jLabel4.setText("jLabel4");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
+        jPanel1.add(labeltotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 40, 10));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 260, 50));
+
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/Fondo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         setSize(new java.awt.Dimension(1041, 720));
@@ -235,8 +233,15 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
         }else{
             int x = JOptionPane.showConfirmDialog(null,"¿Seguro que quiere elimiar este platillo de la orden?");
             if(x == 0){
+                String precio = (String) tablaOrden.getValueAt(filaPlatillo, 3);
+                String calorias = (String) tablaOrden.getValueAt(filaPlatillo, 1);
+                montototal=montototal- Integer.parseInt(precio);
+                caloriatotal = caloriatotal- Integer.parseInt(calorias);
+               
                 DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
                 model.removeRow(filaPlatillo);
+                labeltotal.setText(montototal.toString());
+                 lablecalorias.setText(caloriatotal.toString());
             }else{
                 
             }
@@ -269,31 +274,43 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                      calorias = (String) tablaEntradas.getValueAt(filaEntrada, 1);
                      precio = (String) tablaEntradas.getValueAt(filaEntrada, 3);
                      Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
+                     Integer Intcalorias = Integer.parseInt(calorias);
+                     montototal = montototal+x;
                      filaEntrada = -1;
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
                     String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaEntradas.clearSelection();
+                    labeltotal.setText(montototal.toString());
+                    caloriatotal = caloriatotal + Intcalorias;
+                    lablecalorias.setText(caloriatotal.toString());
                 }else if(filaPlatoFuerte!= -1){
                     System.out.println("platofuerte");
                      nombre = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 0);
                      calorias = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 1);
                      precio = (String) tablaPlatosFuertes.getValueAt(filaPlatoFuerte, 3);
                      Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
-                 
+                     labeltotal.setText(montototal.toString());
                      filaPlatoFuerte = -1;
+                     montototal = montototal+x;
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
-                   String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
+                     String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaPlatosFuertes.clearSelection();
+                    labeltotal.setText(montototal.toString());
+                    caloriatotal = caloriatotal+ Integer.parseInt(calorias);
+                    lablecalorias.setText(caloriatotal.toString());
                 }else if(filaPostre!= -1){
                     System.out.println("postre");
                      nombre = (String) tablaPostres.getValueAt(filaPostre, 0);
-                     calorias = (String) tablaPostres.getValueAt(filaPostre, 1);
+                     calorias = (String) tablaPostres.getValueAt(filaPostre, 1);//--------
                      precio = (String) tablaPostres.getValueAt(filaPostre, 3);
                      Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
                      filaPostre =-1;
-                
+                     montototal = montototal+x;
+                     caloriatotal = caloriatotal + Integer.parseInt(calorias);
+                     labeltotal.setText(montototal.toString());
+                     lablecalorias.setText(caloriatotal.toString());
                     DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
                     String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
@@ -305,18 +322,16 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
                      precio = (String) tablaBebidas.getValueAt(filaBebida, 3);
                      Integer x = (Integer.parseInt(precio) * Integer.parseInt(cantidadPorciones)); // Esta variable guarda el precio * cantidad de porciones.
                      filaBebida = -1;
-                     
+                     montototal = montototal+x;
+                     labeltotal.setText(montototal.toString()); 
                      DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
                     String fila[] = {nombre,calorias,cantidadPorciones,x.toString()};
                     model.addRow(fila);
                     tablaBebidas.clearSelection();
-                }
-                
-                // Calculos 
-                
-                
-                
-                        
+                    labeltotal.setText(montototal.toString());
+                    caloriatotal = caloriatotal+ Integer.parseInt(calorias);
+                    lablecalorias.setText(caloriatotal.toString());
+                }         
             }
         } catch(Exception e){
             
@@ -344,6 +359,11 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
             ProcesaPedido ventanaPedido = new ProcesaPedido();
             ventanaPedido.setPedido(pedido);
             ventanaPedido.setVisible(true);
+            DefaultTableModel model = (DefaultTableModel) tablaOrden.getModel();
+            while(model.getRowCount()>0){
+                model.removeRow(0);
+            }
+            
         }
     }//GEN-LAST:event_botonEnviarActionPerformed
 
@@ -395,13 +415,13 @@ public class ventanaPrincipalCliente extends javax.swing.JFrame {
     private javax.swing.JLabel fondo;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JLabel labeltotal;
+    private javax.swing.JLabel lablecalorias;
     private javax.swing.JTable tablaBebidas;
     private javax.swing.JTable tablaEntradas;
     private javax.swing.JTable tablaOrden;
