@@ -177,6 +177,7 @@ public class Utilidades extends javax.swing.JFrame{
             tf.transform(source, result);
             
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
+<<<<<<< HEAD
 <<<<<<< master
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -290,12 +291,17 @@ public class Utilidades extends javax.swing.JFrame{
 >>>>>>> Aquí va todo mi trabajo
 =======
 >>>>>>> los Extras de máster
+=======
+>>>>>>> Adm-Jorge
             Logger.getLogger(Utilidades.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
     
+<<<<<<< HEAD
 <<<<<<< master
+=======
+>>>>>>> Adm-Jorge
     public String calcularPrecio(ArrayList<String> precio , String tipo){
         String result = "";
         int total = 0;
@@ -349,6 +355,7 @@ public class Utilidades extends javax.swing.JFrame{
         return nodes.getLength();
     }
     
+<<<<<<< HEAD
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
 <<<<<<< master
@@ -364,12 +371,17 @@ public class Utilidades extends javax.swing.JFrame{
         ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);   
 >>>>>>> los Extras de máster
 =======
+=======
+>>>>>>> Adm-Jorge
     public static void main(String[] args) throws Exception{
         Utilidades xml = new Utilidades();
         ArrayList<String[]> matriz = xml.crearMatrizUnitipo("tipo","entradas",false);
         Utilidades xml2 = new Utilidades();
         ArrayList<String[]> matriz2 = xml.crearMatrizUnitipo("tipo","entradas",true);
+<<<<<<< HEAD
 >>>>>>> corregida pulga en utilidades#2
+=======
+>>>>>>> Adm-Jorge
     }
 }
 

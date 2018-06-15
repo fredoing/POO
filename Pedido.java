@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< master
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -137,6 +138,8 @@ public class Pedido extends Cliente {
     
 }
 =======
+=======
+>>>>>>> Adm-Jorge
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -274,4 +277,7 @@ public class Pedido extends Cliente {
     }
     
 }
+<<<<<<< HEAD
 >>>>>>> Aquí va todo mi trabajo
+=======
+>>>>>>> Adm-Jorge

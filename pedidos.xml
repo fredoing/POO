@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< master
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <pedidos>
@@ -32,6 +33,8 @@
   </ped>
 </pedidos>
 =======
+=======
+>>>>>>> Adm-Jorge
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <pedidos>
 <precioPorRecoger>500</precioPorRecoger>
@@ -64,4 +67,7 @@
     <total>3500</total>
   </ped>
 </pedidos>
+<<<<<<< HEAD
 >>>>>>> los Extras de máster
+=======
+>>>>>>> Adm-Jorge
