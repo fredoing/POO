@@ -139,8 +139,9 @@ public class Utilidades extends javax.swing.JFrame{
         return "Contenido no disponible";
     }
      
-    /**FREDO
-     *
+    /**
+     * Este metodo recibe los datos del cliente mas el pedido realizado para
+     * generar un reporte de el pedido
      * @param nombre
      * @param cel
      * @param dir
@@ -213,10 +214,11 @@ public class Utilidades extends javax.swing.JFrame{
     }
     
     /**
-     *
+     * Este metodo se utiliza para calcular el total del precio que debe 
+     * cobrar al cliente.
      * @param precio
      * @param tipo
-     * @return
+     * @return String con el total incluso con el cargo por tipo de pedido
      */
     public String calcularPrecio(ArrayList<String> precio , String tipo){
         String result = "";
@@ -232,9 +234,10 @@ public class Utilidades extends javax.swing.JFrame{
     }
     
     /**
-     *
+     * Este metodo recibe el total y el tipo de pedido para sumarle el monto 
+     * relacionado con el tipo de pedido.
      * @param tipo
-     * @return
+     * @return String con el total del recibo a pagar
      */
     public String consultarPrecio(String tipo){
         String result = "";
@@ -257,8 +260,9 @@ public class Utilidades extends javax.swing.JFrame{
     }
     
     /**
-     *
-     * @return
+     * recorre el xml de pedidos y para saber cuantos de estos existen y asignarle
+     * un numero consecutivo al proximo pedido
+     * @return int con el numero de pedidos dentro del archivo de pedidos
      */
     public int calcularGlobal(){
         NodeList nodes = null;
@@ -281,7 +285,8 @@ public class Utilidades extends javax.swing.JFrame{
     }
     
     /**
-     *
+     * Recibe los platillos y la cantidad pedida por estos para modificar en el
+     * archivo de menu y registrar cuantos platillos se han pedido de cada uno
      * @param platillos
      * @param cantidad
      */

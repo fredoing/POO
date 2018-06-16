@@ -117,6 +117,10 @@ public class Pedido extends Cliente {
         }
     }
     
+    /**
+     * Este metodo genera un pedido lo guarda en el archivo de pedidos
+     * los parametros son seteados mediante los accesores de la clase.
+     */
     public void procesarPedido(){
         Utilidades util = new Utilidades();
         String tipo = "";

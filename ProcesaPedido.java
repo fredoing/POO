@@ -150,6 +150,11 @@ public class ProcesaPedido extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Activa o desactiva los campos a ser llenados con la informacion del 
+     * cliente segun el tipo de pedido.
+     * @param evt 
+     */
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
         String mostrar = jComboBox1.getSelectedItem().toString();
@@ -176,7 +181,11 @@ public class ProcesaPedido extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
+    /**
+     * Con este boton se procesa la solicitud de pedido y manda a llamar los 
+     * metodos de la clase pedido para generar esto.
+     * @param evt 
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Utilidades util = new Utilidades();
